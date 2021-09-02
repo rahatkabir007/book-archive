@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="css/book.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+</head>
+
+<body class="bg-dark container">
+    <!-- Heading -->
+    <h1 class="text-center mt-2 text-success">Welcome To Book Archive</h1>
+
+    <!-- Input Field -->
+    <div class="input-group mb-3 w-75 mx-auto">
+        <input id="search-field" class="form-control me-2" type="search" placeholder="Book Name" aria-label="Book Name"
+            area-describedby='button-addon2'>
+        <button onclick="loadData()" class="btn btn-outline-primary" type="button">Search</button>
+    </div>
+
+    <!-- Total Result  -->
+    <h1 class="text-center text-info" id="total-result"></h1>
+
+
+    <!-- Search Results -->
+    <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 w-75 mx-auto">
+
+    </div>
+
+    <!-- Error Messages -->
+    <div class="mt-2">
+        <h1 id="error-message">Please Write Something!</h1>
+        <h1 id="error-message2">Please Write Something Valid!</h1>
+
+    </div>
+
+
+
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/book.js"></script>
+
+</body>
+
+</html>
